@@ -169,12 +169,10 @@ mse_test_dt = mean_squared_error(y_test, y_test_pred_dt)
 print("R2 Score on Testing Set:", r2_test_dt)
 print("Mean Squared Error on Testing Set:", mse_test_dt)
 
-
 # Decision Tree Plot
 plt.figure(figsize=(25, 10)) 
 tree.plot_tree(dt, max_depth=4, feature_names=fn, filled=True, fontsize=12, class_names=True)
 plt.show()
-
 
 # Plot the feature importances
 importances = dt.feature_importances_
